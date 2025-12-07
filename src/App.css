@@ -1,0 +1,90 @@
+.app {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+nav {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  justify-content: center;
+}
+
+nav button {
+  padding: 0.8rem 2rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 2px solid #646cff;
+  background: transparent;
+  color: #646cff;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+nav button:hover {
+  background: #646cff;
+  color: white;
+}
+
+nav button.active {
+  background: #646cff;
+  color: white;
+}
+
+.page {
+  text-align: center;
+}
+
+.profile {
+  max-width: 600px;
+  margin: 2rem auto;
+  text-align: left;
+}
+
+.bio {
+  margin-top: 2rem;
+}
+
+.bio ul {
+  list-style: none;
+  padding: 0;
+}
+
+.bio li {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #333;
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.project-card {
+  padding: 2rem;
+  border: 2px solid #646cff;
+  border-radius: 12px;
+  transition: transform 0.3s;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+.project-card h3 {
+  margin-top: 0;
+}
+
+.project-card a {
+  color: #646cff;
+  text-decoration: none;
+}
+
+@media (prefers-color-scheme: light) {
+  .bio li {
+    border-bottom: 1px solid #ddd;
+  }
+}
