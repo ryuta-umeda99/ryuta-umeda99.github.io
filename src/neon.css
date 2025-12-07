@@ -1,0 +1,145 @@
+body.neon-mode {
+  background: linear-gradient(135deg, #000 0%, #0a0a1a 50%, #1a001a 100%);
+  background-size: 200% 200%;
+  animation: gradient-shift 15s ease infinite;
+  color: #0ff;
+}
+
+body.neon-mode h1 {
+  color: #0ff;
+  text-shadow: 0 0 10px #0ff, 0 0 20px #0ff, 0 0 30px #0ff, 0 0 40px #0ff;
+  animation: neon-flicker 1.5s infinite alternate;
+}
+
+body.neon-mode h2 {
+  color: #f0f;
+  text-shadow: 0 0 10px #f0f, 0 0 20px #f0f, 0 0 30px #f0f;
+}
+
+body.neon-mode h3 {
+  color: #ff0;
+  text-shadow: 0 0 10px #ff0, 0 0 20px #ff0;
+}
+
+body.neon-mode a {
+  color: #0ff;
+  text-shadow: 0 0 5px #0ff;
+}
+
+body.neon-mode a:hover {
+  color: #f0f;
+  text-shadow: 0 0 10px #f0f, 0 0 20px #f0f;
+}
+
+body.neon-mode nav {
+  background: rgba(0, 0, 0, 0.9);
+  border-bottom: 2px solid #0ff;
+  box-shadow: 0 0 20px #0ff;
+}
+
+body.neon-mode .nav-logo {
+  color: #0ff;
+  text-shadow: 0 0 10px #0ff, 0 0 20px #0ff;
+}
+
+body.neon-mode nav button {
+  color: #0ff;
+  border: 2px solid #0ff;
+  text-shadow: 0 0 5px #0ff;
+}
+
+body.neon-mode nav button:hover {
+  background: #0ff;
+  color: #000;
+  box-shadow: 0 0 20px #0ff;
+}
+
+body.neon-mode nav button.active {
+  background: #0ff;
+  color: #000;
+  box-shadow: 0 0 20px #0ff, 0 0 30px #0ff;
+}
+
+body.neon-mode .hamburger span {
+  background: #0ff;
+  box-shadow: 0 0 5px #0ff;
+}
+
+body.neon-mode .profile,
+body.neon-mode .profile-card,
+body.neon-mode .project-card {
+  background: rgba(0, 0, 0, 0.8);
+  border: 2px solid #0ff;
+  box-shadow: 0 0 20px #0ff, inset 0 0 20px rgba(0, 255, 255, 0.1);
+}
+
+body.neon-mode .project-card:hover {
+  border-color: #f0f;
+  box-shadow: 0 0 30px #f0f, inset 0 0 30px rgba(255, 0, 255, 0.2);
+}
+
+body.neon-mode .bio li {
+  background: rgba(0, 0, 0, 0.6);
+  border: 1px solid #0ff;
+  border-left: 4px solid #0ff;
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.3);
+}
+
+body.neon-mode .bio li:hover {
+  background: rgba(0, 255, 255, 0.1);
+  box-shadow: 0 0 20px #0ff;
+}
+
+body.neon-mode .project-card a {
+  background: #0ff;
+  color: #000;
+  box-shadow: 0 0 10px #0ff, 0 0 20px #0ff;
+  border: none;
+}
+
+body.neon-mode .project-card a:hover {
+  background: #f0f;
+  box-shadow: 0 0 20px #f0f, 0 0 30px #f0f;
+}
+
+body.neon-mode .search-input {
+  background: rgba(0, 0, 0, 0.8);
+  border: 2px solid #0ff;
+  color: #0ff;
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.3);
+}
+
+body.neon-mode .search-input:focus {
+  box-shadow: 0 0 20px #0ff;
+}
+
+body.neon-mode .search-input::placeholder {
+  color: #0aa;
+}
+
+body.neon-mode .tech-slider {
+  background: rgba(0, 0, 0, 0.6);
+  border: 1px solid #0ff;
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.3);
+}
+
+body.neon-mode .cursor-glow {
+  background: radial-gradient(
+    circle,
+    rgba(0, 255, 255, 0.6) 0%,
+    rgba(255, 0, 255, 0.4) 30%,
+    rgba(0, 255, 255, 0.2) 50%,
+    transparent 70%
+  );
+  filter: blur(60px);
+  opacity: 1;
+}
+
+@keyframes neon-flicker {
+  0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
+    text-shadow: 0 0 10px #0ff, 0 0 20px #0ff, 0 0 30px #0ff, 0 0 40px #0ff;
+  }
+  20%, 24%, 55% {
+    text-shadow: none;
+  }
+}

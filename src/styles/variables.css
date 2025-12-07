@@ -1,0 +1,17 @@
+:root {
+  --primary-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  --primary-color: #667eea;
+  --secondary-color: #764ba2;
+  --text-light: #e0e0e0;
+  --text-dark: #333;
+  --text-muted-light: #b0b0b0;
+  --text-muted-dark: #555;
+  --bg-dark: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+  --bg-light: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 50%, #b8c6db 100%);
+  --glass-dark: rgba(255, 255, 255, 0.05);
+  --glass-light: rgba(255, 255, 255, 0.4);
+  --border-dark: rgba(255, 255, 255, 0.1);
+  --border-light: rgba(0, 0, 0, 0.1);
+  --shadow-dark: rgba(0, 0, 0, 0.3);
+  --shadow-primary: rgba(102, 126, 234, 0.4);
+}
